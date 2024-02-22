@@ -40,9 +40,7 @@ matplt.figure(facecolor='black')
 
 matplt.plot(sizes, bestcase_times, label='Best Case', color='cyan') 
 matplt.plot(sizes, worstcase_times, label='Worst Case', color='magenta')  
-matplt.plot(sizes, averagecase_times, label='Average Case', color='yellow')  
-
-matplt.gca().invert_yaxis()  
+matplt.plot(sizes, averagecase_times, label='Average Case', color='yellow')   
 
 matplt.xlabel('Input Size', color='white')  
 matplt.ylabel('Time (seconds)', color='white')  
