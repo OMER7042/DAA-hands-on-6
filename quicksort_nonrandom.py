@@ -5,10 +5,10 @@ def random_pivot_quicksort(array):
     if len(array) <= 1:
         return array
     pivot = array[len(array) // 2]
-    lesser = [x for x in array if x < pivot]
+    smaller = [x for x in array if x < pivot]
     equals = [x for x in array if x == pivot]
     bigger = [x for x in array if x > pivot]
-    return random_pivot_quicksort(lesser) + equals + random_pivot_quicksort(bigger)
+    return random_pivot_quicksort(smaller) + equals + random_pivot_quicksort(bigger)
 
 
 # I demonstrated same example to understand the working of two different logics
